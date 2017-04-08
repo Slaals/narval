@@ -2,36 +2,35 @@
 ::selection {color: #fff; background: #23a74f; text-shadow: none;}
 .btThemeLight {background: url('light_icon.svg');}
 body {
-	background: #111;
-	color: #bbb;
+	background: #1f2832 url('sea.jpg') no-repeat center 0;
+	color: #8dbdf5;
 }
 h1, h2, h3, .accroche, .accroche1, nav {color: #fff;}
 h1 {
 	mix-blend-mode: color-dodge;
-	background: #dbdbdb;
-	border-color: #ccc;
-	color: #595959;
+	background: #163d48;
+	border-color: #7c7d7e;
+	color: #fff;
 }
-a {color: #ddd;}
-a:hover {color: #fff; text-shadow: 0px 0px 10px #aaa;}
+a {color: #a7c3cc;}
+a:hover {color: #fff;}
 hr {background: url('dark_hr.svg') no-repeat center !important;}
-.page {background: transparent url('dark_bg.png') no-repeat;}
 .accroche {color: #fff;}
 .accroche1 {color: #fff;}
 .postTitle {color: #eee;}
-.postInfos {color: #666;}
+.postInfos {color: #b8d1d4;}
 .postInfos a {
 	color: #000;
-	background: #4e4e4e;
+	background: #b8d1d4;
 }
 .postInfos a:hover {
-	background: #999;
+	background: #fff;
 }
 a.video {background: url('dark_videoLink.svg') no-repeat right;}
 a.external {background: url('dark_externalLink.svg') no-repeat right;}
 
 /* Page onlyPost */
-.onlyPost .postTitle {color: #595959;}
+.onlyPost .postTitle {color: #fff;}
 blockquote {
 	border-left: 2px solid #eee;
 	color: #eee;
@@ -50,6 +49,6 @@ nav li:hover .submenu {
 	box-shadow: 0 0 15px #333;
 }
 .comments p {
-	background: #5D5D5D;
+	background: #566F95;
 	color: #030303;
 }

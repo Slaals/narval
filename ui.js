@@ -22,7 +22,7 @@ if (localStorage.getItem("theme") === null || localStorage.getItem("theme") === 
 } else {
 	bt.classList.add("btThemeDark");
 	bt.dataset.theme = 'w';
-	headTheme.href = 'https://yultivert.github.io/theme/light.css';
+	headTheme.href = 'theme/light.css';
 }
 document.body.appendChild(bt);
 
@@ -34,13 +34,13 @@ bt.addEventListener('click', function () {
 		this.classList.remove('btThemeLight');
 		this.classList.add('btThemeDark');
 		this.dataset.theme = 'w';
-		headTheme.href = 'https://yultivert.github.io/theme/light.css';
+		headTheme.href = 'theme/light.css';
 		localStorage.setItem("theme", "light");
 	} else {
 		this.classList.remove('btThemeDark');
 		this.classList.add('btThemeLight');
 		this.dataset.theme = 'b';
-		headTheme.href = 'https://yultivert.github.io/theme/dark.css';
+		headTheme.href = 'theme/dark.css';
 		localStorage.setItem("theme", "dark");
 	}
 }, false);
