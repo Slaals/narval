@@ -1,17 +1,17 @@
-#Documentation
+# Documentation
 
 **_Narval_** est un générateur de blog statique écrit en Python, sous licence GNU AGPLv3.
 
-##Prérequis
+## Prérequis
 
 - Disposer de Python 3.* sur sa machine.
 - Configurer le blog en modifiant le fichier "config.py"
 
-##Ajout d'un article
+## Ajout d'un article
 
 Un article par fichier. Ce fichier est à placer dans le dossier "posts".
 
-###Nom du fichier
+### Nom du fichier
 
 Il se compose :
 
@@ -21,7 +21,7 @@ Il se compose :
 
 Par exemple : "3.laPermaculture.html" ou encore "3.html".
 
-###Contenu du fichier
+### Contenu du fichier
 
 Le contenu du fichier se divise en 2 sections séparées de `---`. La première contient les paramètres de l'article et la seconde contient l'article à proprement parler.
 
@@ -47,18 +47,18 @@ Voici un exemple minimal du contenu d'un article bien formaté :
 
 On peut remarque que le contenu de l'article commence par un titre de niveau 2 (h2). Cela est dû au fait que le niveau 1 est attribué automatiquement au titre de l'article. On peut voir aussi que du HTML se trouve dans le titre de l'article (`&nbsp;`) pour obtenir une espace insécable.
 
-##Ajout d'une page
+## Ajout d'une page
 
 L'ajout d'une page se fait de la même manière que l'ajout d'un article, à la diffèrence que le fichier doit se trouver dans le dossier "pages" et que seuls 2 paramètres sont disponibles :
 
 - **title** : le titre de la page,
 - **desc** : une description de la page utile pour le référencement (sans HTML).
 
-##Ajout d'un brouillon
+## Ajout d'un brouillon
 
 Un brouillon de page ou d'article se place dans le dossier "drafts". Un brouillon n'est pas publié. C'est simplement un dossier utile pour stocker son travail en cours.
 
-##Liens internes
+## Liens internes
 
 Il est possible d'utiliser quelques petits morceaux de code pour se simplifier la vie avec les liens. Ainsi, dans le contenu d'un article ou d'une page, on peut écrire ceci :
 
@@ -66,19 +66,19 @@ Il est possible d'utiliser quelques petits morceaux de code pour se simplifier l
 
 Cela aura pour effet de créer le lien vers l'article 3. `post` peut être remplacé par `page` pour une page et le numéro identifie l'article ou la page.
 
-##Templates
+## Templates
 
 Le fichier "template.py" permet de gérer l'affichage de tout : mise en place générale, liste d'articles, article, page. Le code est grandement commenté pour en permettre sa compréhension. Le dossier "thumbs" permet de stocker les miniatures de certains articles, car le template d'une liste d'article peut varier selon la catégorie choisie. On peut pour une catégorie spécifique afficher des miniatures.
 
-##Styles
+## Styles
 
 Le dossier "theme" contient les feuilles de styles CSS ainsi que les images nécessaires au(x) thème(x). _Narval_ est fourni avec deux thèmes de bases changeables par les utilisateurs à l'aide d'une icône présente dans le coin supèrieur droit de la fenêtre du navigateur. Le fichier "template.py" permet de définir les thèmes chargés. Le basculement d'un thème à l'autre se fait à l'aide de javascript à partir de ce même fichier. "ui.js" est le fichier permettant le basculement d'un thème à l'autre. Il est destiné à contenir tout le code relatif à l'interaction dynamique avec l'utilisateur ("ui" pour "user interface").
 
-##Médias
+## Médias
 
 Le dossier "medias" permet d'y stocker toutes les images, vidéos et sons qui seront présents dans les articles ou les pages, pour une question d'organisation.
 
-##Génération
+## Génération
 
 Dans un terminal, il faut saisir :
 
@@ -94,7 +94,7 @@ Si "_folder" n'a pas été changé dans le fichier "config.py", alors 2 dossiers
 Le premier est à déployer sur un serveur web, tandis que le second permet de tester le blog hors ligne en ouvrant le fichier "index.html". Cela peut servir à se vérifier qu'il s'agit bien de ce que l'on souhaite publier ou de voir les changements apportés au thème facilement, sans avoir à déployer.
 Ce second dossier ne doit pas être bougé de place dans le système d'exploitation, afin que tous les liens internes que contient le blog restent corrects.
 
-##Déploiement
+## Déploiement
 
 Le déploiement peut se faire sur Github Pages ou ailleurs. Github Pages étant un servir gratuit et très pratique, nous allons voir comment procéder avec.
 
