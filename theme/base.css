@@ -1,0 +1,218 @@
+* {box-sizing: border-box;}
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+header, footer, .pagination {text-align: center;}
+article {margin-bottom: 30px;}
+footer {margin-top: 50px;}
+footer {opacity: .6; font-size: .9em;}
+h1, h2, h3, .accroche, .accroche1, nav {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	overflow-wrap: break-word;
+	padding-left: .4em;
+	margin: 20px 0;
+	border: 3px solid;
+}
+h2 {
+	display: inline-block;
+	padding-right: 15px;
+}
+h2 a {
+	text-decoration: none;
+}
+p {
+	line-height: 1.3em;
+}
+hr {
+	height: 40px;
+	border: none !important;
+	margin: 40px 0;
+}
+.page {
+	width: 100%;
+	max-width: 700px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.accroche {
+	font-weight: 700;
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 5px 10px;
+	word-spacing: 0.3em;
+	text-transform: uppercase;
+}
+.accroche1 {
+	font-weight: 700;
+	margin: 0 auto 10px;
+	padding: 5px 10px;
+	word-spacing: 0.3em;
+	text-transform: uppercase;
+}
+.postTitle {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.postInfos {margin-top: -17px; font-size: .85em;}
+.postInfos a {
+	text-decoration: none;
+	padding: 1px 2px;
+	border-radius: 4px;
+}
+a.video {padding-right: 15px;}
+a.external {padding-right: 15px;}
+
+.thumb {
+	width: 210px;
+	display: inline-table;
+	padding: 0px;
+	margin: 15px 3px;
+	font-size: .8em;
+}
+.thumb a {
+	text-decoration: none;
+}
+.thumb a:hover {
+	text-decoration: underline;
+}
+
+.comments p {
+	font-size: .8em;
+	text-shadow: none;
+	padding: 10px;
+}
+
+/*Toggle theme*/
+.btTheme {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+/* Page onlyPost */
+.onlyPost .postTitle {
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	line-height: 1.1em;
+	padding: 10px;
+	word-spacing: 0.1em;
+}
+.onlyPost .postInfos {
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+img {max-width: 100%;}
+
+blockquote{padding-left: 1em;}
+blockquote footer {
+	font-size: .9em;
+	text-align: left;
+	margin: 0;
+}
+.book {
+	font-family: serif;
+	text-align: justify;
+	font-size: 1.1em;
+}
+.book p {
+	line-height: 1.4em;
+	text-indent: 1em;
+}
+.character {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px 0 10px;
+}
+.parenthetical {
+	font-style: italic;
+	text-align: center;
+}
+.dialogue {
+	padding: 0 2em;
+	margin-bottom: 30px;
+}
+/* Paragraphe de type poème */
+.book p.poem {
+    text-indent: 0;
+}
+
+/* Conversation */
+.book p.disc_alpha {
+    margin-bottom: 0;
+}
+.book p.disc_inter {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.book p.disc_omega {
+    margin-top: 0;
+}
+
+/* NAVIGATION = menu déroulant horizontal */
+/* (d'ici jusqu'à la fin du fichier CSS)  */
+
+nav {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+nav > ul {
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+nav > ul > li {
+	float: left;
+	position: relative;
+	padding: 10px 20px;
+}
+nav li {list-style-type: none;}
+.submenu {display: none;}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+nav li:hover .submenu {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 10px 20px;
+	z-index: 100000;
+	min-width: 100%;
+}
+.menu {cursor: pointer;}
+.submenu li a {padding: 7px 0;}
+.menuIndicator {
+	transform: rotate(90deg);
+	display: block;
+}
+.menu:hover .menuIndicator {
+	transform: rotate(-90deg);
+	margin-left: -8px;
+}
