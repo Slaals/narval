@@ -1,7 +1,7 @@
 # Documentation
 
 **_Narval_** est un générateur de blog statique écrit en Python.
-Le projet est opensource est entièrement libre de droits. Il est également possible d'y participer pour le faire évoluer.
+Le projet est opensource et entièrement libre de droits. Il est également possible d'y participer pour le faire évoluer.
 
 ## Prérequis
 
