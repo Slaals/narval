@@ -1,12 +1,140 @@
 # Documentation
 
+**_Narval_** is a static blog generator written in Python.
+This project is OpenSource and copyright free. You're welcome to contribute to this project.
+
+## Prerequisites
+
+- Having Python3.
+- Modifying the file `config.py` to setup the blog
+
+## Quick start
+
+See section ["Quick setup"](#quick-setup).
+
+## Add a post
+
+One post per files. You can find the posts files in the folder `/posts` once the blog has been generated.
+
+### File name
+
+File name example : `3.how_to_build_an_house.html` or `3.html`.
+
+In the file name you can find :
+
+- A unique number which allows to ordonates the posts (the greatest number means that the post will be the first listed in the blog)
+- A name which is the filename (no necessarily the post title)
+
+### File content
+
+Inside the file you may find 2 sections splitted by `---`. The first section is about the post parameters, the second section is about your post content that will be display in the blog.
+
+For the first section, here are the parameters :
+
+- **title** : post title,
+- **cats** : post categories, put a `+` to append some categories,
+- **date** : post date, it should be in the following format (J)J/(M)M/AAAA,
+- **intro** (optional) : post's abstract (or introduction),
+- **author** (optional) : you can specify the author name here,
+- **thumb** (optional) : post's thumbnail.
+
+The second article is the post in HTML format.
+
+Here is a minimal example :
+
+
+### Contenu du fichier
+```
+title = How to build an House
+cats = Building+House+LifeStyle
+date = 6/4/2017
+intro = <p>Have you ever thought of building your house yourself? This post will tell you how.</p>
+---
+<h2>Introduction</h2><p>Bla bla bla...</p>
+```
+
+Notice that the `Introduction` uses a `h2` block, the reason is that the post title uses `h1` automatically.
+
+## Add a page
+
+As for posts there is one page per files. The pages folders is called `/pages`, and is contains only two parameters such as :
+
+- **title** : page title,
+- **desc** : page description mostly for SEO.
+
+## Add a draft
+
+The drafts folder is name `/drafts`. A draft is not published. It is useful to save posts in progress.
+
+## Internal links
+
+It is possible to use a special syntax to link posts inside the blog. For instance you can write :
+
+`<a href="{blog:post:3}">Link text</a>`
+
+This will create a link to the post with the ID 3. If you want to link to a page, replace `post` by `page` which the page ID you want to link to.
+
+## Templates
+
+The file `template.py` allows to configure how the blog looks. The code is commented to help you to do edit it.
+
+## Styles
+
+To edit the styles you can find the styles file in the folder `/theme`. For dynamic interactions, the blog uses the file `/ui.js`.
+
+## Assets
+
+Assets are located in the folder `/medias`. You can put all your audio files, images or video files in this folder.
+
+## <a name="quick-setup"></a>Quick setup
+
+- `git clone https://github.com/yultivert/narval`
+- `cd narval && python3 build.py`
+
+If the generation worked out, you will see a green text telling what eats a narval. If anything goes wrong, submit an issue here, I'll be able to help you.
+
+You should now see two folders :
+
+- _NARVAL
+- _NARVAL-local
+
+The first folder is the blog to publish in a web server, the second one is for testing purposes. Please, do not move the `_NARVAL-local` folder.
+
+## Deploy your first blog
+
+You can use Github Pages which is very convenient
+
+1. Create a new repository name `githubaccount.github.io` (replace "githubaccount" by your Github's account name).
+2. Open the file `config.py` and edits the parameter `blogUrl` to put your repository URL such has `blogUrl = https://githubaccount.github.io`
+3. Generate your blog (explained in section )
+4. With the terminal, go to the folder `_NARVAL`
+5. Type :
+```
+git init
+git commit -am "first commit"
+git remote add origin https://github.com/[MONCOMPTE]/[MONCOMPTE].github.io.git
+git push -u origin master
+```
+
+Github will ask you your credentials.
+
+That's it! The blog is online.
+
+When you want to add posts, pages or assets, you have to add it to the `_NARVAL` folder (has it is explained through this README, then you have to type in the terminal :
+```
+git commit -am "message"
+git push origin master
+```
+
+# Documentation
+
 **_Narval_** est un générateur de blog statique écrit en Python.
 Le projet est opensource et entièrement libre de droits. Il est également possible d'y participer pour le faire évoluer.
 
 ## Prérequis
 
 - Disposer de Python 3.* sur sa machine.
-- Configurer le blog en modifiant le fichier "config.py"
+- Configurer le blog en modifiant le fichier `config.py`
 
 ## Démonstration rapide
 
