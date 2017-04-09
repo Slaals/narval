@@ -1,4 +1,6 @@
-# Documentation
+Lang : [FR](#fr) - [EN](#en)
+
+# <a name="en"></a>Documentation
 
 **_Narval_** is a static blog generator written in Python.
 This project is OpenSource and copyright free. You're welcome to contribute to this project.
@@ -126,7 +128,7 @@ git commit -am "message"
 git push origin master
 ```
 
-# Documentation
+# <a name="fr"></a>Documentation
 
 **_Narval_** est un générateur de blog statique écrit en Python.
 Le projet est opensource et entièrement libre de droits. Il est également possible d'y participer pour le faire évoluer.
@@ -138,7 +140,7 @@ Le projet est opensource et entièrement libre de droits. Il est également poss
 
 ## Démonstration rapide
 
-Une fois le projet *Narval* téléchargé, il est possible de le générer directement puisqu'il contient déjà 4 articles et 1 page tests. Pour se faire, aller à la section "Générer le blog".
+Une fois le projet *Narval* téléchargé, il est possible de le générer directement puisqu'il contient déjà 4 articles et 1 page tests. Pour se faire, aller à la section ["Générer le blog"](#generer-blog).
 
 ## Ajout d'un article
 
@@ -211,7 +213,7 @@ Le dossier "theme" contient les feuilles de styles CSS ainsi que les images néc
 
 Le dossier "medias" permet d'y stocker toutes les images, vidéos et sons qui seront présents dans les articles ou les pages, pour une question d'organisation.
 
-## Générer le blog
+## <a name="generer-blog"></a>Générer le blog
 
 Dans un terminal, il faut saisir :
 
@@ -234,7 +236,7 @@ Le déploiement peut se faire sur Github Pages ou ailleurs. Github Pages étant 
 1. Créer un compte sur Github (ce nom se retrouvera dans l'url du blog)
 2. Ajouter un nouveau "Repository" portant le nom du compte + ".github.io" et cliquer sur "Create repository"
 3. Modifier la valeur de "blogUrl" dans "config.py" pour mettre le nom du "repository" précédé du protocole (ex: "https://moncompte.github.io")
-4. Générer le blog (voir la section précédente)
+4. Générer le blog [(voir la section précédente)](#generer-blog)
 5. Se rendre dans le dossier "_NARVAL" (ou autre nom si ce nom a été changé dans "config.py");
 6. Ouvrir le terminal dans ce dossier et saisir :
 
